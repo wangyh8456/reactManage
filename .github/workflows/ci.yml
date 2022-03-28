@@ -1,7 +1,7 @@
 
 name: Build app and deploy to aliyun
 on:
-  #监听push操作
+  #监听push
   push:
     branches:
       - master
