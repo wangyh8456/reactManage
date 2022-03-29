@@ -26,7 +26,7 @@ export default function Login() {
 
   return (
     <div className={index.form}>
-    <h2 style={{color:'white',fontSize:'30px',marginBottom:'20px'}}>网上商城后台</h2>
+    <h2 style={{color:'white',fontSize:'30px',marginBottom:'20px'}}>商城管理后台</h2>
     <Form
       name="basic"
       wrapperCol={{
