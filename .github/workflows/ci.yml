@@ -19,6 +19,7 @@ jobs:
     - name: Install npm dependencies
       run: npm install
     - name: Run build task
+      run:  export CI=false
       run: npm run build
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.1.5
