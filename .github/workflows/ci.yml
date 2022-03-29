@@ -23,7 +23,7 @@ jobs:
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_SSH_KEY }}
           ARGS: '-rltgoDzvO --delete'
           SOURCE: 'build/'
           REMOTE_HOST: '123.56.85.203' # 你的阿里云公网地址
