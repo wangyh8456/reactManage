@@ -34,7 +34,7 @@ const router=[
             icon: <SettingOutlined/>,
             children: [
                 { id:'21',path: "/system/role",  element: <Role />,title:'角色管理',icon:<TeamOutlined />},
-                { id:'37',path: "/system/menu", element: <Menu />,title:'菜单管理',icon:<MenuOutlined /> },
+                { id:'23',path: "/system/menu", element: <Menu />,title:'菜单管理',icon:<MenuOutlined /> },
             ]
         }
       ]
