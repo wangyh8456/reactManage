@@ -5,17 +5,13 @@
 import {lazy} from 'react'
 import Login from '../components/Login'
 import AppLayout from '../components/Layout'
-import Auth from '../views/System/Auth'
-import Test from '../views/System/Test'
 import {Navigate} from 'react-router-dom'
 import {
-    FileOutlined,
     TeamOutlined,
     UserOutlined,
     SettingOutlined,
     MenuOutlined
 } from '@ant-design/icons';
-const Home=lazy(()=>{return import('../components/Home')})
 const Role=lazy(()=>{return import('../views/Role')})
 const User=lazy(()=>{return import('../views/User')})
 const Menu=lazy(()=>{return import('../views/Menu')})
@@ -40,8 +36,6 @@ const router=[
       ]
     },
     { path: "/login", element: <Login /> },
-    { id:'4',path: "/system/test/*", element: <Test />,title:'传参详情',icon:<TeamOutlined/> },
-    { path:"/",element:<Navigate to="/login"/>},
-    { path:"*",element:<Navigate to="/user"/>}
+    { path:"*",element:<Navigate to="/user"/>},
 ]
 export default router
